@@ -1,0 +1,32 @@
+# Name of workflow
+name: Deploy Simple App
+
+on:
+  workflow_dispatch:
+    inputs:
+      boturl:
+        description: "URL of the bot to deploy to"
+        required: true
+        default: "https://kix.ada.support"
+      authtoken:
+        description: "JWT token to authorize the request"
+        required: true
+        default: "Ask chat enrichment"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./simpleapp
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Use Python 3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+      - run: |
+          python deploy.py ${{ github.event.inputs.boturl }} "${{ github.event.inputs.authtoken }}"

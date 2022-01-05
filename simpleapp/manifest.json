@@ -1,0 +1,499 @@
+{
+    "app_id": "app_tickety_boo",
+    "created_by": "kix",
+    "app_icon": "<svg viewBox=\"0 0 500 500\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\r\n<g transform=\"matrix(.074956 0 0 -.087176 -79.933 541.84)\" style=\"\">\r\n<path d=\"m6575 5279c-38-11-707-211-1485-444s-1925-577-2549-764c-623-187-1158-352-1187-366-121-59-204-152-245-275-18-55-20-79-16-160 5-88 24-157 245-890 132-437 252-834 266-881 55-179 153-293 299-348 71-26 209-29 301-5 33 9 486 143 1006 299s1670 500 2555 765c1035 310 1636 495 1682 517 183 88 273 241 260 440-5 78-36 189-267 958-165 550-273 891-292 928-59 111-141 185-251 226-77 28-222 28-322 0zm226-68c115-19 213-91 266-195 23-44 145-444 469-1526 83-278 85-287 82-371-3-68-10-97-31-141-33-68-110-141-180-173-78-36-458-148-467-138s-720 2377-720 2397c0 11 28 24 88 42 48 14 137 41 197 59 170 53 214 59 296 46zm-513-698c89-296 252-839 362-1207 111-368 198-672 193-676-4-4-246-78-538-165-291-87-1225-366-2075-621-850-254-1548-460-1551-456-4 4-167 541-363 1195-196 653-359 1194-362 1202-4 8 0 17 7 19 8 3 896 269 1974 591 1078 323 2007 602 2065 620s110 34 116 34c6 1 83-241 172-536zm-4266-1265c87-288 250-831 363-1207s204-685 202-687c-7-7-384-117-449-130-165-34-321 38-401 184-14 26-61 166-105 312s-163 537-263 870l-183 605-1 100c0 89 3 106 28 156 32 67 109 142 175 172 50 22 436 144 462 146 12 1 52-120 172-521z\"\/>\r\n<path d=\"m5581 4565c-150-46-277-87-283-93-12-12 22-132 40-139 7-3 56 7 108 22s97 25 100 22 44-133 91-289c46-155 90-288 96-294 9-9 30-7 84 10 40 12 77 26 82 31 6 7-22 115-79 305-54 176-86 297-80 300 6 4 47 17 93 30 112 31 112 32 87 113-18 57-24 67-43 66-12 0-145-38-296-84z\"\/>\r\n<path d=\"m5056 4407c-38-12-71-27-73-34-3-9 56-215 188-645 24-78 33-98 48-98 26 0 149 39 155 48 5 8-206 720-219 742-9 14-19 12-99-13z\"\/>\r\n<path d=\"m4650 4286-105-32 3-232c2-128 1-232-1-232-3 0-44 64-92 143-133 216-155 249-168 244-10-4-152-46-209-63-10-3-18-13-18-23 0-24 210-724 220-735 10-10 132 21 154 38 12 9 6 39-35 176-28 91-56 186-64 213-8 26-12 47-11 47 2 0 56-90 121-200 64-110 119-200 122-200 14 0 149 44 157 51 5 4 4 101-3 229-7 122-11 224-8 226 2 2 32-91 67-206 43-140 69-210 78-210 8 0 45 9 83 21 52 16 69 25 69 39 0 10-18 76-40 146-21 71-70 233-108 359-57 193-72 230-88 232-10 1-66-13-124-31z\"\/>\r\n<path d=\"m3590 3967c-338-99-340-100-340-120 0-12 16-73 35-136 19-64 66-221 105-349 38-129 72-238 76-243 9-15 27-11 184 35 183 55 226 73 279 122 105 94 124 236 57 432-54 161-162 259-294 268-31 2-77-2-102-9zm151-206c24-26 44-62 58-103 69-212 49-271-110-320-46-14-85-25-86-24-11 10-132 441-126 447 15 14 118 37 172 38 50 1 57-2 92-38z\"\/>\r\n<path d=\"m2715 3706-70-22-17-194c-45-523-51-631-41-641 8-8 36-3 97 15l86 27v48c0 26 3 68 6 93l6 45 123 37c68 20 127 36 133 36 5 0 34-31 63-70 30-38 58-70 62-70 5 0 47 12 94 26 70 21 84 29 80 44-2 9-119 159-258 333-183 228-260 316-274 316-11-1-51-11-90-23zm159-332c32-41 56-77 54-79-6-7-132-44-135-41-6 6 10 196 16 196 4 0 33-34 65-76z\"\/>\r\n<path d=\"m5365 3354c-99-30-217-66-262-80-46-13-83-30-83-37 0-25 213-723 225-736 11-11 58 1 286 69 151 45 278 86 283 91 11 10-9 109-28 134-12 17-24 15-204-38-104-32-194-57-199-57-11 0-55 153-45 160 4 4 79 28 167 54s165 52 172 57c8 8 7 24-4 67-26 92-19 91-200 37-87-26-165-49-174-51-13-4-21 8-33 42-27 81-32 76 137 127 83 25 164 49 179 53 48 11 52 26 28 99-18 54-25 65-43 64-12 0-103-25-202-55z\"\/>\r\n<path d=\"m4723 3162c-29-10-57-22-63-28-8-8 5-66 49-212 34-110 61-206 61-212s-81 62-180 152c-100 90-191 169-204 177-20 12-31 11-95-8-39-12-74-28-77-35-6-14 203-724 218-741 10-11 136 20 155 38 10 9-1 56-48 211-33 109-58 201-55 203 2 3 90-72 195-166l190-170 77 24c42 13 81 28 85 32 8 8-190 693-212 736-12 20-27 20-96-1z\"\/>\r\n<path d=\"m3715 2870c-203-43-316-164-323-345-12-266 154-475 377-475 169 0 314 86 378 225 23 51 27 73 26 145-1 149-67 304-162 379-81 65-198 93-296 71zm107-170c114-32 197-264 138-384-35-72-117-108-205-92-119 23-214 251-157 378 21 49 48 72 110 94 45 16 66 17 114 4z\"\/>\r\n<path d=\"m1543 3366c-124-40-165-86-144-163 17-63 52-88 119-88 70 1 184 40 223 76 38 36 45 70 24 125-29 77-92 92-222 50zm171-68c8-13 8-23 0-35-24-41-174-93-227-79-37 9-44 42-16 72 49 52 218 81 243 42z\"\/>\r\n<path d=\"m1707 3103c-84-27-82-25-56-89 24-60-17-113-77-98-33 8-44 32-44 95 0 48-1 51-22 45-13-3-26-6-30-6-13 0-9-89 6-124 23-55 53-76 108-76 94 0 137 47 124 135-7 42-6 46 20 55 15 6 32 9 38 7 5-2 19-32 31-68 17-53 24-63 40-61 11 2 22 6 24 8 3 2-8 49-24 104-21 74-33 100-44 99-9-1-51-12-94-26z\"\/>\r\n<path d=\"m1685 2820c-38-13-72-34-94-57-31-32-33-39-29-85 9-86 74-131 161-107 58 16 87 49 87 101 0 24-7 55-14 71-14 26-14 27 13 27 40 0 79-34 87-75 6-36 11-39 38-29 36 14 1 115-50 149-41 27-128 29-199 5zm48-77c32-37 25-79-17-100-95-45-139 49-46 98 42 23 43 23 63 2z\"\/>\r\n<path d=\"m1771 2557c-86-28-131-71-131-125 0-114 81-149 234-102 84 26 146 81 146 129 0 39-22 85-52 105-31 22-119 19-197-7zm170-47c24-13 25-52 1-73-26-23-129-58-179-60-82-4-96 56-22 93 40 21 130 48 162 49 10 1 27-4 38-9z\"\/>\r\n<path d=\"m1838 2293c-22-5-22-23-3-87 8-27 15-55 15-62 0-8-25-21-55-30-50-14-55-18-49-37 11-38 21-42 73-25 48 15 50 15 64-5 11-16 17-18 34-9 13 8 19 18 16 30-3 15 9 22 79 41 46 13 86 27 90 30 3 3 4 18 1 32-4 23-22 35-116 78-62 28-116 51-122 50-5-1-18-3-27-6zm134-99 33-17-45-13c-50-15-57-12-66 34-6 32-6 32 20 22 14-5 41-17 58-26z\"\/>\r\n<path d=\"m2068 2019c-14-7-15-15-8-34 5-14 6-27 0-30-10-6-204-65-205-62-10 27-26 57-32 57-5 0-14-4-21-9-12-7-9-24 13-95 23-78 28-87 48-84 18 2 21 8 19 35l-3 31 98 30c54 17 118 36 143 42 25 7 48 14 52 16 15 9-7 47-33 56-16 5-29 13-29 17s-6 15-12 24c-10 12-17 14-30 6z\"\/>\r\n<path d=\"m2103 1760c-18-11-33-27-33-35 0-19 0-19-40 1-41 21-99 6-129-33-44-55-16-162 52-196 49-25 111-9 135 33 13 23 21 28 37 23 62-23 127 9 139 67 9 45-21 119-58 141-39 24-63 24-103-1zm88-60c23-13 26-62 5-79-8-7-30-11-48-9-31 3-33 5-30 37 4 56 30 74 73 51zm-157-36c23-9 21-69-4-94-26-26-55-25-81 1-45 45 21 117 85 93z\"\/>\r\n<path d=\"m2798 833c7-3 16-2 19 1 4 3-2 6-13 5-11 0-14-3-6-6z\"\/>\r\n<text transform=\"matrix(8.0519 -25.838 -29.02 -6.6859 6428.5 4607.6)\" fill=\"rgb(51, 51, 51)\" font-family=\"Arial, sans-serif\" font-size=\"28px\" style=\"white-space:pre\">ADA<\/text>\r\n<\/g>\r\n<\/svg>",
+    "app_blob": {
+        "display_name": "Tickety Boo",
+        "description": "Ada's holiday raffle bot",
+        "configuration_schema": {
+            "fields": [
+                {
+                    "id": "apiToken",
+                    "display_name": "Notion API Token",
+                    "hidden": true,
+                    "validation": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "id": "prizesDb",
+                    "display_name": "Notion Prizes Database ID",
+                    "hidden": false,
+                    "validation": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "id": "ticketsDb",
+                    "display_name": "Notion Tickets Database ID",
+                    "hidden": false,
+                    "validation": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "actions": [
+            {
+                "id": "list_winners",
+                "display_name": "List Winners",
+                "description": "List all existing winners",
+                "input_schema": [
+                    {
+                        "id": "asText",
+                        "display_name": "Retrieve winners as text?",
+                        "type": "text",
+                        "description": "If set to true, the list of winners will be sent back as text, ready to be rendered to chat. Otherwise, a JSON array of strings will be returned.",
+                        "optional": false,
+                        "validation": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "output_schema": [
+                    {
+                        "id": "winners",
+                        "display_name": "Winners",
+                        "description": "List of winners",
+                        "type": "string"
+                    }
+                ],
+                "http_recipe": {
+                    "uri": "https://simpleapp-tickety-boo.netlify.app/.netlify/functions/notion-list-winners",
+                    "method": "POST",
+                    "headers": {},
+                    "payload": {
+                        "apiToken": "{config.apiToken}",
+                        "prizesDb": "{config.prizesDb}",
+                        "asText": "{inputs.asText}"
+                    },
+                    "response": [
+                        {
+                            "id": "winners",
+                            "extract_path": "winners"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "get_prizes",
+                "display_name": "List Prizes",
+                "description": "List all available prizes",
+                "input_schema": [],
+                "output_schema": [
+                    {
+                        "id": "prize1",
+                        "display_name": "Prize #1",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize2",
+                        "display_name": "Prize #2",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize3",
+                        "display_name": "Prize #3",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize4",
+                        "display_name": "Prize #4",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize5",
+                        "display_name": "Prize #5",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize6",
+                        "display_name": "Prize #6",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize7",
+                        "display_name": "Prize #7",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize8",
+                        "display_name": "Prize #8",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize9",
+                        "display_name": "Prize #9",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize10",
+                        "display_name": "Prize #10",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize11",
+                        "display_name": "Prize #11",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize12",
+                        "display_name": "Prize #12",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize13",
+                        "display_name": "Prize #13",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize14",
+                        "display_name": "Prize #14",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize15",
+                        "display_name": "Prize #15",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize16",
+                        "display_name": "Prize #16",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize17",
+                        "display_name": "Prize #17",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize18",
+                        "display_name": "Prize #18",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize19",
+                        "display_name": "Prize #19",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize20",
+                        "display_name": "Prize #20",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize21",
+                        "display_name": "Prize #21",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize22",
+                        "display_name": "Prize #22",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize23",
+                        "display_name": "Prize #23",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize24",
+                        "display_name": "Prize #24",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize25",
+                        "display_name": "Prize #25",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize26",
+                        "display_name": "Prize #26",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize27",
+                        "display_name": "Prize #27",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize28",
+                        "display_name": "Prize #28",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize29",
+                        "display_name": "Prize #29",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prize30",
+                        "display_name": "Prize #30",
+                        "description": "Prize name. Will be blank if no prize in this index.",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prizeCount",
+                        "display_name": "Prize Count",
+                        "description": "Count of remaining available prizes",
+                        "type": "string"
+                    },
+                    {
+                        "id": "prizesJSON",
+                        "display_name": "Prizes JSON",
+                        "description": "Raw JSON tring of all remaining prizes",
+                        "type": "string"
+                    }
+                ],
+                "http_recipe": {
+                    "uri": "https://simpleapp-tickety-boo.netlify.app/.netlify/functions/notion-get-prizes",
+                    "method": "POST",
+                    "headers": {},
+                    "payload": {
+                        "apiToken": "{config.apiToken}",
+                        "prizesDb": "{config.prizesDb}",
+                        "numberToGenerate": 30
+                    },
+                    "response": [
+                        {
+                            "id": "prize1",
+                            "extract_path": "prizes[0].item"
+                        },
+                        {
+                            "id": "prize2",
+                            "extract_path": "prizes[1].item"
+                        },
+                        {
+                            "id": "prize3",
+                            "extract_path": "prizes[2].item"
+                        },
+                        {
+                            "id": "prize4",
+                            "extract_path": "prizes[3].item"
+                        },
+                        {
+                            "id": "prize5",
+                            "extract_path": "prizes[4].item"
+                        },
+                        {
+                            "id": "prize6",
+                            "extract_path": "prizes[5].item"
+                        },
+                        {
+                            "id": "prize7",
+                            "extract_path": "prizes[6].item"
+                        },
+                        {
+                            "id": "prize8",
+                            "extract_path": "prizes[7].item"
+                        },
+                        {
+                            "id": "prize9",
+                            "extract_path": "prizes[8].item"
+                        },
+                        {
+                            "id": "prize10",
+                            "extract_path": "prizes[9].item"
+                        },
+                        {
+                            "id": "prize11",
+                            "extract_path": "prizes[10].item"
+                        },
+                        {
+                            "id": "prize12",
+                            "extract_path": "prizes[11].item"
+                        },
+                        {
+                            "id": "prize13",
+                            "extract_path": "prizes[12].item"
+                        },
+                        {
+                            "id": "prize14",
+                            "extract_path": "prizes[13].item"
+                        },
+                        {
+                            "id": "prize15",
+                            "extract_path": "prizes[14].item"
+                        },
+                        {
+                            "id": "prize16",
+                            "extract_path": "prizes[15].item"
+                        },
+                        {
+                            "id": "prize17",
+                            "extract_path": "prizes[16].item"
+                        },
+                        {
+                            "id": "prize18",
+                            "extract_path": "prizes[17].item"
+                        },
+                        {
+                            "id": "prize19",
+                            "extract_path": "prizes[18].item"
+                        },
+                        {
+                            "id": "prize20",
+                            "extract_path": "prizes[19].item"
+                        },
+                        {
+                            "id": "prize21",
+                            "extract_path": "prizes[20].item"
+                        },
+                        {
+                            "id": "prize22",
+                            "extract_path": "prizes[21].item"
+                        },
+                        {
+                            "id": "prize23",
+                            "extract_path": "prizes[22].item"
+                        },
+                        {
+                            "id": "prize24",
+                            "extract_path": "prizes[23].item"
+                        },
+                        {
+                            "id": "prize25",
+                            "extract_path": "prizes[24].item"
+                        },
+                        {
+                            "id": "prize26",
+                            "extract_path": "prizes[25].item"
+                        },
+                        {
+                            "id": "prize27",
+                            "extract_path": "prizes[26].item"
+                        },
+                        {
+                            "id": "prize28",
+                            "extract_path": "prizes[27].item"
+                        },
+                        {
+                            "id": "prize29",
+                            "extract_path": "prizes[28].item"
+                        },
+                        {
+                            "id": "prize30",
+                            "extract_path": "prizes[29].item"
+                        },
+                        {
+                            "id": "prizeCount",
+                            "extract_path": "count"
+                        },
+                        {
+                            "id": "prizesJSON",
+                            "extract_path": "prizes"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "draw_winner",
+                "display_name": "Draw a Winner",
+                "description": "Draw a random winner",
+                "input_schema": [],
+                "output_schema": [
+                    {
+                        "id": "winner",
+                        "display_name": "Winner",
+                        "description": "Name of the drawn winner",
+                        "type": "string"
+                    }
+                ],
+                "http_recipe": {
+                    "uri": "https://simpleapp-tickety-boo.netlify.app/.netlify/functions/notion-draw-winner",
+                    "method": "POST",
+                    "headers": {},
+                    "payload": {
+                        "apiToken": "{config.apiToken}",
+                        "ticketsDb": "{config.ticketsDb}"
+                    },
+                    "response": [
+                        {
+                            "id": "winner",
+                            "extract_path": "winner"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "set_prize_winner",
+                "display_name": "Set a prize winner",
+                "description": "Set the winner of a certain prize",
+                "input_schema": [
+                    {
+                        "id": "prizesJSON",
+                        "display_name": "Prizes JSON",
+                        "type": "text",
+                        "description": "Raw JSON tring of all remaining prizes",
+                        "optional": false,
+                        "validation": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "id": "winner",
+                        "display_name": "Winner",
+                        "type": "text",
+                        "description": "Name of the winner to set",
+                        "optional": false,
+                        "validation": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "id": "selectedPrize",
+                        "display_name": "Prize",
+                        "type": "text",
+                        "description": "Name of the prize to set",
+                        "optional": false,
+                        "validation": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "output_schema": [],
+                "http_recipe": {
+                    "uri": "https://simpleapp-tickety-boo.netlify.app/.netlify/functions/notion-set-prize-winner",
+                    "method": "POST",
+                    "headers": {},
+                    "payload": {
+                        "apiToken": "{config.apiToken}",
+                        "prizes": "{inputs.prizesJSON}",
+                        "winner": "{inputs.winner}",
+                        "selectedPrize": "{inputs.selectedPrize}"
+                    },
+                    "response": []
+                }
+            }
+        ]
+    }
+}

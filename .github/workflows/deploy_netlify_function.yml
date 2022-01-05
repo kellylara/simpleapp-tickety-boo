@@ -1,0 +1,39 @@
+# Name of workflow
+name: Deploy Netlify Functions
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./netlify
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm install
+      - name: Build functions
+        uses: netlify/actions/cli@master
+        env:
+          BUILD_COMMAND: cd netlify
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: functions:build --src=functions/
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+      - name: Deploy to netlify
+        uses: netlify/actions/cli@master
+        env:
+          BUILD_COMMAND: cd netlify
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        with:
+          args: deploy --dir=. --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'

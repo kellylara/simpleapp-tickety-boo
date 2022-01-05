@@ -1,0 +1,18 @@
+{
+  "name": "simpleapp-tickety-boo",
+  "version": "2.0.1",
+  "description": "Netlify Functions for Tickety Boo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kix Panganiban (kix@ada.support)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "netlify-cli": "^8.0.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.0"
+  }
+}
